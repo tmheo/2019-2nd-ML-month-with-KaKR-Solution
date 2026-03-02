@@ -27,7 +27,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from sklearn.preprocessing import LabelEncoder, Imputer, StandardScaler, RobustScaler
+from sklearn.preprocessing import LabelEncoder, StandardScaler, RobustScaler
+from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split, cross_val_score, KFold, StratifiedKFold, StratifiedShuffleSplit
 from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor, ExtraTreesRegressor
@@ -40,16 +41,15 @@ import xgboost as xgb
 import lightgbm as lgb
 import catboost as cat
 
-import keras
-from keras.models import Sequential, Model
-from keras.layers import Dense, Embedding, Reshape, Concatenate, Input, Flatten, BatchNormalization, Dropout
-from keras import optimizers
-from keras import initializers
-from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from keras.utils import plot_model
-from keras import backend as K
 import tensorflow as tf
-from tensorflow import set_random_seed
+from tensorflow import keras
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.layers import Dense, Embedding, Reshape, Concatenate, Input, Flatten, BatchNormalization, Dropout
+from tensorflow.keras import optimizers
+from tensorflow.keras import initializers
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from tensorflow.keras.utils import plot_model
+from tensorflow.keras import backend as K
 
 import scipy
 from scipy import stats
@@ -57,19 +57,14 @@ from scipy.stats import norm, skew #for some statistics
 from scipy.cluster import hierarchy as hc
 from scipy.special import boxcox1p
 
-from tqdm import tqdm_notebook as tqdm
+from tqdm.notebook import tqdm
 
 #RANDOM_SEED = 42
 os.environ['PYTHONHASHSEED'] = '0'
 RANDOM_SEED = 0
 rn.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
-set_random_seed(RANDOM_SEED)
-
-session_conf = tf.ConfigProto(intra_op_parallelism_threads=1,
-                              inter_op_parallelism_threads=1)
-sess = tf.Session(graph=tf.get_default_graph(), config=session_conf)
-K.set_session(sess)
+tf.random.set_seed(RANDOM_SEED)
 
 def display_all(df):
     with pd.option_context("display.max_rows", 10000, "display.max_columns", 10000, "display.max_colwidth", 1000): 
