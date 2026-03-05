@@ -183,11 +183,6 @@ secret-*.*
 .moai/worktrees/
 
 # ===========================================
-# Jupyter Notebooks
-# ===========================================
-.ipynb_checkpoints/
-
-# ===========================================
 # Node.js (for docs/Nextra)
 # ===========================================
 node_modules/
@@ -209,3 +204,6 @@ dist-ssr/
 .vercel/
 .netlify/
 .firebase/
+
+# User Custom Patterns (preserved by moai update)
+.ipynb_checkpoints/

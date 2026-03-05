@@ -48,7 +48,7 @@ uv run jupyter notebook
 3. `Generate Neighbor Stat.ipynb` → `neighbor_*_stat.csv` 생성
 4. `Stacking Ensemble.ipynb` → 최종 앙상블 모델
 
-> 2~3단계의 중간 결과물이 `input/`에 이미 포함되어 있으므로, 4번 노트북을 바로 실행할 수 있습니다.
+> 2\~3단계의 중간 결과물이 `input/`에 이미 포함되어 있으므로, 4번 노트북을 바로 실행할 수 있습니다.
 
 ## 기술 스택
 

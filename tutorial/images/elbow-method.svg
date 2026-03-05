@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 230" width="420" height="230" style="font-family:Arial,sans-serif">
+  <rect x="0" y="0" width="420" height="230" fill="#fafafa" rx="8" stroke="#ddd" stroke-width="1"/>
+  <text x="210" y="24" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Elbow Method 개념도</text>
+  <!-- Y축 -->
+  <line x1="60" y1="38" x2="60" y2="175" stroke="#555" stroke-width="2"/>
+  <!-- X축 -->
+  <line x1="60" y1="175" x2="385" y2="175" stroke="#555" stroke-width="2"/>
+  <!-- Y축 라벨 -->
+  <text x="20" y="112" font-size="12" fill="#666" text-anchor="middle" transform="rotate(-90,20,112)">Inertia</text>
+  <!-- X축 라벨 -->
+  <text x="222" y="198" font-size="12" fill="#666" text-anchor="middle">K (클러스터 수)</text>
+  <!-- X축 눈금 -->
+  <text x="85" y="190" font-size="10" fill="#999" text-anchor="middle">2</text>
+  <text x="121" y="190" font-size="10" fill="#999" text-anchor="middle">3</text>
+  <text x="157" y="190" font-size="10" fill="#999" text-anchor="middle">4</text>
+  <text x="193" y="190" font-size="10" fill="#999" text-anchor="middle">5</text>
+  <text x="229" y="190" font-size="10" fill="#999" text-anchor="middle">6</text>
+  <text x="265" y="190" font-size="10" fill="#999" text-anchor="middle">7</text>
+  <text x="301" y="190" font-size="10" fill="#999" text-anchor="middle">8</text>
+  <text x="337" y="190" font-size="10" fill="#999" text-anchor="middle">9</text>
+  <text x="373" y="190" font-size="10" fill="#999" text-anchor="middle">10</text>
+  <!-- 부드러운 곡선 (cubic bezier) -->
+  <path d="M 85,45 C 100,55 110,78 121,93 C 132,108 142,125 157,138 C 172,151 182,157 193,160 C 204,163 218,166 229,167 C 240,168 254,169.5 265,170 C 276,170.5 290,171 301,171.2 C 312,171.4 326,171.5 337,171.6 C 348,171.7 362,171.8 373,171.8" fill="none" stroke="#3498db" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 데이터 포인트 -->
+  <circle cx="85" cy="45" r="5" fill="#3498db"/>
+  <circle cx="121" cy="93" r="5" fill="#3498db"/>
+  <circle cx="157" cy="138" r="5" fill="#3498db"/>
+  <circle cx="193" cy="160" r="6" fill="#fff" stroke="#e74c3c" stroke-width="2.5"/>
+  <circle cx="229" cy="167" r="5" fill="#3498db"/>
+  <circle cx="265" cy="170" r="5" fill="#3498db"/>
+  <circle cx="301" cy="171.2" r="5" fill="#3498db"/>
+  <circle cx="337" cy="171.6" r="5" fill="#3498db"/>
+  <circle cx="373" cy="171.8" r="5" fill="#3498db"/>
+  <!-- Elbow 표시 점선 -->
+  <line x1="193" y1="38" x2="193" y2="175" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- Elbow 라벨 -->
+  <text x="193" y="220" font-size="12" fill="#e74c3c" font-weight="bold" text-anchor="middle">↑ 여기가 Elbow!</text>
+</svg>
