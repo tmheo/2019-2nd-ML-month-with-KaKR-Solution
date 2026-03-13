@@ -207,3 +207,11 @@ dist-ssr/
 
 # User Custom Patterns (preserved by moai update)
 .ipynb_checkpoints/
+
+# ===========================================
+# MoAI-ADK Configuration (project-specific)
+# ===========================================
+.moai/
+.claude/
+.mcp.json
+CLAUDE.md
